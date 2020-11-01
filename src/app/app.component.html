@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="title">
+		Wellcome to {{ title }}
+	</div>
+
+	<div class="content">
+		This content is allways visible
+		<button (click)="click($event)">Click</button>
+	</div>
+
+	<div class="content" *featureFlag="'false'">
+		This content is visible only if 'flag' is true
+	</div>
+
+	<div class="content">
+		This content is allways visible
+	</div>
+</div>
